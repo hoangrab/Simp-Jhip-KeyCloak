@@ -125,7 +125,7 @@ spring:
       hibernate.query.fail_on_pagination_over_collection_fetch: true
       hibernate.query.in_clause_parameter_padding: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
@@ -157,11 +157,11 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://localhost:9080/realms/jhipster
+            issuer-uri: http://localhost:9090/realms/realmRach
         registration:
           oidc:
-            client-id: web_app
-            client-secret: web_app
+            client-id: ClientVip
+            client-secret: 8OIhWu4VA2qRmlJc6AHYEMtbnx6NXKFx
             scope: openid, profile, email, offline_access # last one for refresh tokens
 
 server:
